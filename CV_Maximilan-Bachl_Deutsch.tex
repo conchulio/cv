@@ -28,7 +28,7 @@
 \usepackage{polyglossia}
 \setdefaultlanguage{german}
 
-\newcommand{\employer}{BitTubes}
+\newcommand{\employer}{BP Mediaworks GmbH}
 
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
@@ -63,6 +63,30 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{\employer{}}{}
+%\date{January 01, 1984}
+\opening{Sehr geehrte Frau Winderlich,}
+\closing{Mit besten Grüßen,\\
+\vspace*{0.4cm}
+\includegraphics{unterschrift.png}
+\vspace*{-1.3cm}}
+\enclosure[Anlagen]{curriculum vitæ}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Auf der Suche nach einem anspruchsvollen Job, in dem ich meine Kenntnisse in der Web-Entwicklung und Konzepte aus meinem Studium anwenden kann, bin ich auf \employer{} aufmerksam geworden da mich HTML5 und verwandte Technologien sehr stark interessieren.
+
+Zur Zeit bin ich an der TU Berlin in Informatik im Bachelor immatrikuliert und studiere im 4. Semester. Den Großteil meiner Fähigkeiten mit HTML, Ajax und anderen modernen Technologien habe ich allerdings privat als Hobby und mit Freunden erlernt. Sie können sich bei Interesse auch meine privaten Projekte auf \url{https://github.com/conchulio} ansehen. Das Wochenendprojekt "Omni-Instrument" ist glaube ich das aussagekräftigste Beispiel für meine Fähigkeiten mit Javascript. Auch habe ich mit Freunden die Seite \url{http://soundrain.org} erstellt, wobei ich für den Großteil des Javascripts verantwortlich bin.
+
+Aufgrund meiner Erfahrung im Bereich der Web-Entwicklung und dem großen eigenen Interesse an dem Thema denke ich, dass ich mich schnell in Ihrem Team einfügen kann und einen essentiellen Beitrag zu Ihrem Produkt leisten kann. Der frühestmögliche Eintrittstermin meinerseits ist schon Anfang Mai. Da ich Vollzeit studiere bieten sich 40 Stunden im Monat für mich am besten an.
+
+Über ein persönliches Gespräch mit Ihnen würde ich mich sehr freuen.
+
+\makeletterclosing
+
+\clearpage
 %\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
@@ -74,7 +98,7 @@
 
 
 \section{Ausbildung}
-\cventry{seit 10.2011}{Bachelor-Studium der Informatik}{Technische Universität}{Berlin}{}{}  % arguments 3 to 6 can be left empty
+\cventry{seit 10.2011}{Bachelor-Studium der Informatik}{Technische Universität}{Berlin}{}{Notenschnitt im Moment 1,78}  % arguments 3 to 6 can be left empty
 \cventry{2002--2010}{Gymnasium}{GRG17 Geblergasse}{Wien}{}{Im Juni 2010 Matura mit ausgezeichnetem Erfolg, Notenschnitt: 1,23}
 
 %\section{Master thesis}
@@ -127,8 +151,8 @@
 \cvitem{Sonstige}{\LaTeX, Photoshop, MS Office, sowie Datenbanken wie MySQL und PostgreSQL}
 
 \section{Hobbies}
-\cvitem{Sport}{Einradfahren, Fahrräder, Skifahren, Rudern}
-\cvitem{Sonstige}{Programmierung, Lesen}
+\cvitem{Sport}{Einradfahren, Fahrräder, Skifahren, Rudern, Krafttraining}
+\cvitem{Sonstige}{Programmierung, Lesen, Philosophie}
 
 %\section{Extra 1}
 %\cvlistitem{Item 1}
@@ -158,29 +182,6 @@
 %\bibliographystylemisc{plain}
 %\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
 
-\clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-\recipient{\employer{}}{}
-%\date{January 01, 1984}
-\opening{Sehr geehrte Damen und Herren,}
-\closing{Mit besten Grüßen,\\
-\vspace*{0.4cm}
-\includegraphics{unterschrift.png}
-\vspace*{-1.3cm}}
-\enclosure[Anlagen]{curriculum vitæ, Maturazeugnis}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
-
-Auf der Suche nach einem anspruchsvollen Job, in dem ich meine Kenntnisse in der Web-Entwicklung und Konzepte aus meinem Studium anwenden kann, bin ich auf \employer{} aufmerksam geworden. HTML5 und verwandte Technologien interessieren mich dabei besonders. Deshalb bewerbe ich mich bei Ihnen, um an der Weiterentwicklung Ihres Produkts %und Ihrer Idee 
-mitarbeiten zu können.
-
-Zur Zeit bin ich an der TU Berlin in Informatik im Bachelor immatrikuliert und studiere im 3. Semester. Den Großteil meiner Fähigkeiten mit HTML, Ajax und anderen modernen Technologien habe ich allerdings privat als Hobby und mit Freunden erlernt. In den Ferien schrieb ich während der freien Zeit meines Praktikums ein durchaus umfangreiches privates Projekt (in Ruby on Rails), das ich Ihnen bei Interesse auch gerne zeigen kann, damit Sie einen Eindruck meiner Fähigkeiten erhalten.
-
-Aufgrund meiner Erfahrung im Bereich der Web-Entwicklung und dem großen eigenen Interesse an dem Thema denke ich, dass ich mich schnell in Ihrem Team einfügen kann und einen essentiellen Beitrag zu Ihrem Produkt leisten kann. Der frühestmögliche Eintrittstermin meinerseits ist schon Mitte November. Als Gehalt stelle ich mir etwa 13€ pro Stunde brutto vor. Da ich Vollzeit studiere bieten sich 40 Stunden im Monat für mich am Besten an.
-
-Über ein persönliches Gespräch mit Ihnen würde ich mich sehr freuen.
-
-\makeletterclosing
 
 %\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
