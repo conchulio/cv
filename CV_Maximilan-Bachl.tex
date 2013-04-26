@@ -1,0 +1,189 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+\newcommand{\employer}{Fraunhofer Heinrich Hertz Institute}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Ubuntu}
+%\setmonofont[Scale=MatchLowercase]{Ubuntu Mono}
+\setmonofont[Scale=MatchLowercase]{Menlo}
+\setmainfont[Scale=MatchLowercase,Mapping=tex-text]{Ubuntu}
+
+% personal data
+\firstname{Maximilian}
+\familyname{Bachl}
+\title{curriculum vitæ}					% optional, remove the line if not wanted
+\address{Ella-Kay-Straße 40 c/o Bauhaus}{10405 Berlin}    % optional, remove the line if not wanted
+\mobile{+49~176~39362876}                     % optional, remove the line if not wanted
+% \phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+% \fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{maximilian.bachl@gmail.com}                          % optional, remove the line if not wanted
+% \homepage{www.johndoe.com}                    % optional, remove the line if not wanted
+% \extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{\employer{}}{}
+%\date{January 01, 1984}
+\opening{Dear Mr Wirth,}
+\closing{With kind regards,\\
+\vspace*{0.4cm}
+\includegraphics{unterschrift.png}
+\vspace*{-1.1cm}}
+\enclosure[Attachments]{curriculum vitæ}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I was looking for a challenging and fascinating job where I can use my skills practically. Telecommunication technology and theoretical computer science are a topic which I am very interested in. Furthermore the C programming language is one of my favorite programming languages and I also have experience with functional programming languages like Haskell. So I think that \employer{} is a good opportunity for me and I am sure that I can contribute a lot. Thus I am applying at your institution.
+
+At the moment I am studying computer science at TU Berlin and I am in my fourth semester. Most of my skills and knowledge that I have about programming and algorithms I learnt by myself during hobby projects with friends and also on my own. If you want, you can also have a look at my projects on github at \url{https://github.com/conchulio} (although these are mostly web-based projects) and see what I am currently capable of. 
+
+If you are actually interested in me at the same level that I am interested in \employer{}, I can start working for you at the beginning of May. Because I am studying full-time I would prefer working around 10 hours a week.
+
+I am looking forward to your response and it would be a great pleasure for me to meet you in person.
+
+\makeletterclosing
+
+\clearpage
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{General information}
+\cvitem{Day of birth}{26.6.1992}  % arguments 3 to 6 can be left empty
+\cvitem{Nationality}{Austrian}  % arguments 3 to 6 can be left empty
+\cvitem{Place of birth}{Vienna}  % arguments 3 to 6 can be left empty
+
+\section{Education}
+\cventry{since 10.2011}{Bachelor of Computer Science}{Technische Universität}{Berlin}{}{The current average mark is 1.78}  % arguments 3 to 6 can be left empty
+\cventry{2002--2010}{Gymnasium}{GRG17 Geblergasse}{Vienna}{}{Graduated in June 2010 with an average mark of 1.25}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Experience}
+\subsection{Work experience}
+\cventry{since 11.2012}{Self Employed}{}{}{}{I worked for start-ups, doing mainly frontend development with Ruby on Rails and recent HTML5 technologies.}
+\cventry{9.2012}{Internship}{ATOS}{Vienna}{}{Development of various commandline utilities and graphical Programs for Windows, e.g.\ a graphical Task Manager written in Visual Basic .NET}
+\cventry{8.2011}{Internship}{OMV}{Vienna}{}{Administration of databases and translation of technical manuals from German to English}
+\cventry{8.2009}{Internship}{OMV}{Vienna}{}{Development of an automated email software using Python and several other administrative activities}
+%\newline{}
+%Detailed achievements:
+%\begin{itemize}
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+\subsection{Miscellaneous}
+\cventry{2010--2011}{Civil Service}{Jewish Community of Vienna}{Vienna}{}{Support of holocaust survivors and scientific research activity in the archives}
+
+\section{Languages}
+%\cvitemwithcomment{Deutsch}{Muttersprache}{}
+%\cvitemwithcomment{Englisch}{Ausgezeichnet}{}
+\cvitem{German}{First language}
+\cvitem{English}{Very fluent and experienced}
+\cvitem{French}{Basics}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Programming abilities}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvitem{OS}{Windows, Linux, Mac OS X and Unix in General}
+\cvitem{Languages}{C, Ruby, Python, Java, JavaScript/Coffeescript, Haskell, Assembly, Bash, Visual Basic}
+\cvitem{Web}{Experience with Ruby on Rails, Django and HTML5 and AJAX, CSS3 and CSS preprocessors. Also I have experience with the HTML5 virtual file system API and binary data in JavaScript as well as common programming interfaces like the Google Maps API. Furthermore I have basic experience with Node.js but I am very curious about its concept.}
+\cvitem{Miscellaneous}{\LaTeX, Photoshop, MS Office, version control software like git and databases like MySQL and Postgres}
+
+\section{Hobbies}
+\cvitem{Sport}{Unicycling, cycling, skiing, snowboarding, strength training}
+\cvitem{Others}{Programming, reading, philosophy, traveling}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3}
+%
+%\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.

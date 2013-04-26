@@ -1,0 +1,189 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+
+\newcommand{\employer}{BitTubes}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+\setmainfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+
+% personal data
+\firstname{Maximilian}
+\familyname{Bachl}
+\title{curriculum vitæ}					% optional, remove the line if not wanted
+\address{Ella-Kay-Straße 40 c/o Bauhaus}{10405 Berlin}    % optional, remove the line if not wanted
+\mobile{+49~176~39362876}                     % optional, remove the line if not wanted
+% \phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+% \fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{maximilian.bachl@gmail.com}                          % optional, remove the line if not wanted
+% \homepage{www.johndoe.com}                    % optional, remove the line if not wanted
+% \extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Allgemeines}
+\cvitem{Geburtsort}{Wien}  % arguments 3 to 6 can be left empty
+\cvitem{Geburtstag}{26.6.1992}  % arguments 3 to 6 can be left empty
+\cvitem{Staatsbürgersch.}{Österreichisch}  % arguments 3 to 6 can be left empty
+
+
+\section{Ausbildung}
+\cventry{seit 10.2011}{Bachelor-Studium der Informatik}{Technische Universität}{Berlin}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2002--2010}{Gymnasium}{GRG17 Geblergasse}{Wien}{}{Im Juni 2010 Matura mit ausgezeichnetem Erfolg, Notenschnitt: 1,23}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Erfahrung}
+\subsection{Berufserfahrung}
+\cventry{seit 11.2012}{Selbstständig}{}{}{}{Arbeit bei Startups im Frontend-Bereich mit Ruby on Rails unter Benutzung von neuen HTML-5-Technologien auf der Basis von Werkverträgen.}
+\cventry{9.2012}{Praktikum}{ATOS}{Wien}{}{Schreiben von kommandozeilenorientierten und graphischen Programmen für diverse Zwecke (z.B. einen erweiterte Taskmanager für Windows)}
+\cventry{8.2011}{Praktikum}{OMV}{Wien}{}{Verwalten von Datenbanken und Übersetzungen vom Deutschen ins Englische}
+\cventry{8.2009}{Praktikum}{OMV}{Wien}{}{Entwicklung eines Mail-Verteiler-Programms und diverse Verwaltungtätigkeiten}
+%\newline{}
+%Detailed achievements:
+%\begin{itemize}
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+\subsection{Andere}
+\cventry{2010--2011}{Zivildienst}{Israelitische Kultusgemeinde}{Wien}{}{Betreuung von Holocaustüberlebenden und wissenschaftliche Recherchetätigkeiten}
+
+\section{Sprachen}
+%\cvitemwithcomment{Deutsch}{Muttersprache}{}
+%\cvitemwithcomment{Englisch}{Ausgezeichnet}{}
+\cvitem{Deutsch}{Muttersprache}
+\cvitem{Englisch}{Ausgezeichnet in Schrift und Sprache}
+\cvitem{Französisch}{Grundkenntnisse}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Programmierfähigkeiten}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvitem{OS}{Windows, Linux, Mac OS X und Unix im Allgemeinen}
+\cvitem{Sprachen}{Ruby, Python, Java, Javascript, Coffeescript, Haskell, PHP, C, Bash, Visual Basic}
+\cvitem{Web}{Erfahrung mit Ruby on Rails, Django und HTML5, CSS und Javascript sowie Ajax}
+\cvitem{Sonstige}{\LaTeX, Photoshop, MS Office, sowie Datenbanken wie MySQL und PostgreSQL}
+
+\section{Hobbies}
+\cvitem{Sport}{Einradfahren, Fahrräder, Skifahren, Rudern}
+\cvitem{Sonstige}{Programmierung, Lesen}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3}
+%
+%\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{\employer{}}{}
+%\date{January 01, 1984}
+\opening{Sehr geehrte Damen und Herren,}
+\closing{Mit besten Grüßen,\\
+\vspace*{0.4cm}
+\includegraphics{unterschrift.png}
+\vspace*{-1.3cm}}
+\enclosure[Anlagen]{curriculum vitæ, Maturazeugnis}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Auf der Suche nach einem anspruchsvollen Job, in dem ich meine Kenntnisse in der Web-Entwicklung und Konzepte aus meinem Studium anwenden kann, bin ich auf \employer{} aufmerksam geworden. HTML5 und verwandte Technologien interessieren mich dabei besonders. Deshalb bewerbe ich mich bei Ihnen, um an der Weiterentwicklung Ihres Produkts %und Ihrer Idee 
+mitarbeiten zu können.
+
+Zur Zeit bin ich an der TU Berlin in Informatik im Bachelor immatrikuliert und studiere im 3. Semester. Den Großteil meiner Fähigkeiten mit HTML, Ajax und anderen modernen Technologien habe ich allerdings privat als Hobby und mit Freunden erlernt. In den Ferien schrieb ich während der freien Zeit meines Praktikums ein durchaus umfangreiches privates Projekt (in Ruby on Rails), das ich Ihnen bei Interesse auch gerne zeigen kann, damit Sie einen Eindruck meiner Fähigkeiten erhalten.
+
+Aufgrund meiner Erfahrung im Bereich der Web-Entwicklung und dem großen eigenen Interesse an dem Thema denke ich, dass ich mich schnell in Ihrem Team einfügen kann und einen essentiellen Beitrag zu Ihrem Produkt leisten kann. Der frühestmögliche Eintrittstermin meinerseits ist schon Mitte November. Als Gehalt stelle ich mir etwa 13€ pro Stunde brutto vor. Da ich Vollzeit studiere bieten sich 40 Stunden im Monat für mich am Besten an.
+
+Über ein persönliches Gespräch mit Ihnen würde ich mich sehr freuen.
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
