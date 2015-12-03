@@ -28,14 +28,11 @@
 \usepackage{polyglossia}
 \setdefaultlanguage{english}
 
-\newcommand{\employer}{Fraunhofer Heinrich Hertz Institute}
-
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text]{Hoefler Text}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Ubuntu}
-%\setmonofont[Scale=MatchLowercase]{Ubuntu Mono}
-\setmonofont[Scale=MatchLowercase]{Menlo}
+%\setromanfont[Mapping=tex-text]{Hoefler Text}
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Ubuntu}
+%\setmonofont[Scale=MatchLowercase]{Menlo}
 \setmainfont[Scale=MatchLowercase,Mapping=tex-text]{Ubuntu}
 
 % personal data
@@ -43,7 +40,7 @@
 \familyname{Bachl}
 \title{curriculum vitæ}					% optional, remove the line if not wanted
 \address{37 Boulevard Jourdan}{75014 Paris, France}    % optional, remove the line if not wanted
-\mobile{+33~6~52~85~88~58}                     % optional, remove the line if not wanted
+\mobile{+33~7~82~30~20~45}                     % optional, remove the line if not wanted
 % \phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
 % \fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
 \email{maximilian.bachl@gmail.com}                          % optional, remove the line if not wanted
@@ -68,134 +65,133 @@
 % recipient data
 \recipient{\employer{}}{}
 %\date{January 01, 1984}
-\opening{Dear Mr Wirth,}
-\closing{With kind regards,\\
+\opening{Dear Mr Benbadis,}
+\closing{Sincerely yours,\\
 \vspace*{0.4cm}
 \includegraphics{unterschrift.png}
 \vspace*{-1.1cm}}
-\enclosure[Attachments]{curriculum vitæ}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-%\makelettertitle
-%
-%I was looking for a challenging and fascinating job where I can use my skills practically. Telecommunication technology and theoretical computer science are a topic which I am very interested in. Furthermore the C programming language is one of my favorite programming languages and I also have experience with functional programming languages like Haskell. So I think that \employer{} is a good opportunity for me and I am sure that I can contribute a lot. Thus I am applying at your institution.
-%
-%At the moment I am studying computer science at TU Berlin and I am in my fourth semester. Most of my skills and knowledge that I have about programming and algorithms I learnt by myself during hobby projects with friends and also on my own. If you want, you can also have a look at my projects on github at \url{https://github.com/conchulio} (although these are mostly web-based projects) and see what I am currently capable of. 
-%
-%If you are actually interested in me at the same level that I am interested in \employer{}, I can start working for you at the beginning of May. Because I am studying full-time I would prefer working around 10 hours a week.
-%
-%I am looking forward to your response and it would be a great pleasure for me to meet you in person.
-%
-%\makeletterclosing
+\enclosure[Attachment]{curriculum vitæ}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\newcommand{\employer}{Thales advanced studies TAI Lab}
+\makelettertitle
+
+I was looking for a challenging and fascinating internship where I can use my acquired skills practically. Because of my personal interest and experience in telecommunication technology and networking I believe that the position at \employer{} is an excellent opportunity for me and that I can contribute a lot and thus I am applying at your institution.
+
+During my Bachelor studies and my student job in the field of LTE research I became fascinated by networking technology and I developed a keen interest in it. In the course of my Master studies in the field of Internet Technology I gained deep knowledge about the concepts of Software Defined Networking and got intrigued by this novel approach which will lead to groundbreaking changes in the future of telecommunication. Besides my studies I am also interested in traveling which was the reason for me to join an international student association where I was a board member and organized international gatherings. Furthermore I decided to pursue an international Master program combining technology and innovation and I believe that this has enabled me to be open to new ideas and understand people from different cultures in a better way which is a useful skill in an international environment like at Thales. 
+
+As an innovation-minded person and problem solver I believe that my skills and experience greatly match the offered position at Thales. I am looking forward to your response and it would be a great pleasure for me to meet you in person. Thank you for your time and consideration.
+
+\makeletterclosing
 %
 %\clearpage
 
 %-----       resume       ---------------------------------------------------------
-\makecvtitle
-
-\section{General information}
-\cvitem{Day of birth}{26.6.1992}  % arguments 3 to 6 can be left empty
-\cvitem{Nationality}{Austrian}  % arguments 3 to 6 can be left empty
-\cvitem{Place of birth}{Vienna}  % arguments 3 to 6 can be left empty
-
-\section{Education}
-\cventry{From 9.2015}{EIT Digital, second year}{Université Pierre et Marie Curie}{Paris}{}{}
-\cventry{9.2014--6.2015}{EIT Digital, first year}{University of Trento}{Trento, Italy}{}{Average grade 28.5 of 30 points}
-\cventry{10.2011--8.2014}{Bachelor of Computer Science}{Technische Universität Berlin}{Berlin}{}{Average grade of 1.8, Bachelor thesis on "Impact of Packet-Loss on Localization and Subjective Quality in 3D-Telephone calls"}  % arguments 3 to 6 can be left empty
-\cventry{2002--2010}{Gymnasium}{GRG17 Geblergasse}{Vienna}{}{Graduated in June 2010 with an average grade of 1.25}
-
+%\makecvtitle
+%
+%\section{General information}
+%\cvitem{Day of birth}{26.6.1992}  % arguments 3 to 6 can be left empty
+%\cvitem{Nationality}{Austrian}  % arguments 3 to 6 can be left empty
+%\cvitem{Place of birth}{Vienna}  % arguments 3 to 6 can be left empty
+%
+%\section{Education}
+%\cventry{From 9.2015}{EIT Digital, second year}{Université Pierre et Marie Curie}{Paris}{}{}
+%\cventry{9.2014--6.2015}{EIT Digital, first year}{University of Trento}{Trento, Italy}{}{The specialization of the study program is \textit{Internet Technology and Architecture} \newline
+%Average grade 28.5 out of 30 points}
+%\cventry{10.2011--8.2014}{Bachelor of Computer Science}{Technische Universität Berlin}{Berlin}{}{Average grade of 1.8 where 1 is the best and 5 the worst}  % arguments 3 to 6 can be left empty
+%\cventry{2002--2010}{Gymnasium}{GRG17 Geblergasse}{Vienna}{}{Graduated in June 2010 with an average grade of 1.25 where 1 is the best and 5 the worst}
+%
 %\section{Bachelor thesis}
 %\cvitem{Title}{\textbf{Impact of Packet-Loss on Localization and Subjective Quality in 3D-Telephone calls}}
-%\cvitem{Professor}{}
+%\cvitem{Professor}{Prof.~Dr.-Ing.~Sebastian Möller}
 %\cvitem{Supervisors}{Janto Skowronek, Dennis Guse}
-%\cvitem{Short Abstract}{Packet-loss is a well-known problem for Voice-over-IP telephony due to the fact that the shared Internet infrastructure is used to transport media data. In this thesis the impact of packet-loss on the performance and subjective quality of a spatial audio reproduction system (3D audio with headphones) is investigated. Spatial audio is interesting for telephony conferencing as it enables humans to easily distinguish the position of sound sources. This so-called 'Cocktail party effect' can be exploited to make multi-party conferencing easier and mentally less demanding. \newline The two questions that are investigated in this thesis are if the localization of the audio sources and the subjective quality change under the condition of packet-loss.}
-
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
-
-\section{Experience}
-\subsection{Work experience}
-\cventry{5.2013--5.2014}{Software Developer}{Fraunhofer Heinrich Hertz Institute}{Berlin}{}{In the last year of my Bachelor studies I worked at Fraunhofer Heinrich Hertz Institute. 
-In my department (Wireless Networks) we developed a software-based LTE implementation.
-My biggest tasks were to implement the demapper, descrambler and demodulator according to the LTE specifications. The demapper is the part that separates the big data stream that arrives from the mobile phone tower. I split up the control information and payload and analyzed it according to the LTE standard. The descrambler and demodulator converted the data to bits that could finally be interpreted. Also I developed a graphical front-end that plotted and visualized the extracted information. \\
-I accomplished this task mainly using MATLAB and C.}
-\cventry{since 11.2012}{Self Employed}{}{}{}{I worked for start-ups, doing mainly frontend development with Ruby on Rails and recent HTML5 technologies. Also I developed websites for private persons and small companies.}
-\cventry{9.2012}{Internship}{ATOS}{Vienna}{}{Development of various commandline utilities and graphical Programs for Windows, e.g.\ a graphical Task Manager written in Visual Basic .NET.}
-\cventry{8.2011}{Internship}{OMV}{Vienna}{}{Administration of databases and translation of technical manuals from German to English.}
-\cventry{8.2009}{Internship}{OMV}{Vienna}{}{Development of an automated email software using Python and several other administrative activities.}
-%\newline{}
-%Detailed achievements:
-%\begin{itemize}
-%\item Achievement 1;
-%\item Achievement 2, with sub-achievements:
-%  \begin{itemize}
-%  \item Sub-achievement (a);
-%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-%    \begin{itemize}
-%    \item Sub-sub-achievement i;
-%    \item Sub-sub-achievement ii;
-%    \item Sub-sub-achievement iii;
-%    \end{itemize}
-%  \item Sub-achievement (c);
-%  \end{itemize}
-%\item Achievement 3.
-%\end{itemize}}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-\subsection{Miscellaneous}
-\cventry{2013--2014}{Board Member}{AEGEE-Berlin e.V.}{Berlin}{}{AEGEE is the largest transnational, interdisciplinary student organization in Europe. It promotes an equal, democratic and unified Europe, open to all across national borders. I was in the board of the association in Berlin as the treasurer and organized several international events with up to 30 participants. These gatherings had a focus on cultural exchange and learning about other peoples in Europe.}
-\cventry{2010--2011}{Civil Service}{Jewish Community of Vienna}{Vienna}{}{Support of holocaust survivors and scientific research activity in the archives}
-
-\section{Languages}
-%\cvitemwithcomment{Deutsch}{Muttersprache}{}
-%\cvitemwithcomment{Englisch}{Ausgezeichnet}{}
-\cvitem{German}{First language}
-\cvitem{English}{C1 Level (TOEFL test 115/120 points)}
-\cvitem{French}{Basics}
-\cvitem{Italian}{Basics}
-%\cvitemwithcomment{Language 3}{Skill level}{Comment}
-
-\section{Programming abilities}
-%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-\cvitem{OS}{Windows, Linux, Mac OS X and Unix in General}
-\cvitem{Languages}{MATLAB, C, Ruby, Python, Java, JavaScript, Haskell, Assembly, Bash, Visual Basic}
-\cvitem{Web}{Experience with Ruby on Rails, Django and HTML5 and AJAX, CSS3 and CSS preprocessors. Also I have experience with the HTML5 virtual file system API and binary data in JavaScript as well as common programming interfaces like the Google Maps API. Furthermore I am experienced with Node.js.}
-\cvitem{Miscellaneous}{\LaTeX, MS Office, version control software like git and databases like MySQL, Postgres and MongoDB. \newline Experience with mobile communications (GSM, UMTS and LTE) and also with the specific codecs and means of transmission. I learnt about mobile telephony at Fraunhofer HHI where I worked on the LTE specification and because of my Bachelor's thesis which I wrote at Deutsche Telekom. 
-%\newline In this thesis I investigate the influence of packet-loss on the quality of 3D-audio-conferences. It included a study with over 24 people in which the subjects had to rate presented audio samples.
-}
-
-\section{Hobbies}
-\cvitem{Sport}{Running, cycling, skiing, strength training}
-\cvitem{Others}{Programming, politics, philosophy, gardening, traveling}
-
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem{Item 3}
+%\cvitem{Short Abstract}{The impact of packet-loss on the quality of a 3D audio reproduction system in the case of multi party telephone conferences is investigated. I conducted a user study with 28 participants. The evaluation was carried out using MATPLOTLIB and Gnu R.}
 %
-%\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+%%\section{Master thesis}
+%%\cvitem{title}{\emph{Title}}
+%%\cvitem{supervisors}{Supervisors}
+%%\cvitem{description}{Short thesis abstract}
 %
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{}
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                   % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+%\section{Experience}
+%\subsection{Work experience}
+%\cventry{5.2013--5.2014}{Software Developer}{Fraunhofer Heinrich Hertz Institute}{Berlin}{}{I worked in the department for Wireless Networks where I participated in the development of a software defined radio implementation of LTE.
+%My major tasks were to implement the demapper, descrambler and demodulator according to the LTE specifications and an associated graphical front-end. \\
+%I accomplished these tasks mainly using MATLAB and C.}
+%\cventry{since 11.2012}{Self Employed}{}{}{}{I worked for start-ups, doing mainly frontend development with Ruby on Rails and recent HTML5 technologies. Also I developed websites for private persons and small companies.}
+%\cventry{9.2012}{Internship}{ATOS}{Vienna}{}{Development of various commandline utilities and graphical Programs for Windows, e.g.\ a graphical Task Manager written in Visual Basic .NET.}
+%\cventry{8.2011}{Internship}{OMV}{Vienna}{}{Administration of databases and translation of technical manuals from German to English.}
+%\cventry{8.2009}{Internship}{OMV}{Vienna}{}{Development of an automated email software using Python.}
+%%\newline{}
+%%Detailed achievements:
+%%\begin{itemize}
+%%\item Achievement 1;
+%%\item Achievement 2, with sub-achievements:
+%%  \begin{itemize}
+%%  \item Sub-achievement (a);
+%%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%%    \begin{itemize}
+%%    \item Sub-sub-achievement i;
+%%    \item Sub-sub-achievement ii;
+%%    \item Sub-sub-achievement iii;
+%%    \end{itemize}
+%%  \item Sub-achievement (c);
+%%  \end{itemize}
+%%\item Achievement 3.
+%%\end{itemize}}
+%%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%\subsection{Miscellaneous}
+%\cventry{2013--2014}{Board Member}{AEGEE-Berlin e.V.}{Berlin}{}{AEGEE is the largest transnational, interdisciplinary student organization in Europe. It promotes an equal, democratic and unified Europe, open to all across national borders. I was in the board of the association in Berlin as the treasurer and organized several international events with up to 30 participants. These gatherings had a focus on cultural exchange and learning about other cultures in Europe.}
+%\cventry{2010--2011}{Civil Service}{Jewish Community of Vienna}{Vienna}{}{Support of holocaust survivors and scientific research activity in the archives}
+%
+%\section{Languages}
+%%\cvitemwithcomment{Deutsch}{Muttersprache}{}
+%%\cvitemwithcomment{Englisch}{Ausgezeichnet}{}
+%\cvitem{German}{First language}
+%\cvitem{English}{C2 Level (TOEFL test 115/120 points)}
+%\cvitem{Italian}{Intermediate}
+%\cvitem{French}{Basics}
+%%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+%
+%\section{Programming abilities}
+%%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+%\cvitem{OS}{Windows, Linux, Mac OS X and Unix in general}
+%\cvitem{Languages}{MATLAB, Gnu R, C, Ruby, Python, Java, JavaScript, Assembly, Bash}
+%\cvitem{Web}{Experience with Ruby on Rails, Django and HTML5 and AJAX, CSS3 and CSS preprocessors. Furthermore I have experience with commonly used programming interfaces like the Google Maps API.}
+%\cvitem{Miscellaneous}{\LaTeX, MS Office, version control software like git and databases like PostgreSQL and MongoDB.\newline Experience with mobile communications (GSM, UMTS and LTE). I learned about mobile communications at Fraunhofer HHI where I worked on the LTE specification and because of my Bachelor's thesis which I wrote at Deutsche Telekom. 
+%%\newline In this thesis I investigate the influence of packet-loss on the quality of 3D-audio-conferences. It included a study with over 24 people in which the subjects had to rate presented audio samples.
+%}
+%
+%\section{Hobbies}
+%\cvitem{Sport}{Jogging, cycling, skiing, strength training}
+%\cvitem{Interests}{Programming, politics, philosophy, gardening, traveling}
+%
+%%\section{Extra 1}
+%%\cvlistitem{Item 1}
+%%\cvlistitem{Item 2}
+%%\cvlistitem{Item 3}
+%%
+%%\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+%%
+%%\section{Extra 2}
+%%\cvlistdoubleitem{Item 1}{Item 4}
+%%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%%\cvlistdoubleitem{Item 3}{}
+%
+%% Publications from a BibTeX file without multibib
+%%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+%
+%% Publications from a BibTeX file using the multibib package
+%%\section{Publications}
+%%\nocitebook{book1,book2}
+%%\bibliographystylebook{plain}
+%%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%%\nocitemisc{misc1,misc2,misc3}
+%%\bibliographystylemisc{plain}
+%%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
 
 \end{document}
 
